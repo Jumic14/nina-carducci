@@ -62,7 +62,15 @@ body {
 	margin: 0 20px;
 	z-index: 0;
 }
-.picture img {
+.picture.left img {
+	width: 100%;
+	height: auto;
+}
+.picture.right img {
+	width: 100%;
+	height: auto;
+}
+.carousel-item img {
 	width: 100%;
 	height: auto;
 }
