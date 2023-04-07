@@ -39,7 +39,7 @@ body {
 }
 .social-link img {
 	width: 20px;
-	height: auto;
+	height: 20px;
 }
 #about {
 	display: flex;
@@ -63,7 +63,15 @@ body {
 	margin: 0 20px;
 	z-index: 0;
 }
-.picture img {
+.picture.left img {
+	width: 100%;
+	height: auto;
+}
+.picture.right img {
+	width: 100%;
+	height: auto;
+}
+.carousel-item img {
 	width: 100%;
 	height: auto;
 }
