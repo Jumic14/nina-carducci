@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
 	<title>Nina Carducci - Photographe</title>
+	<meta name="description" content="Venez découvrir le portfolio de Nina Carducci, photographe passionnée située à Bordeaux, ainsi que ses différents services" />
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
-	<meta name="description" content="Venez découvrir le portfolio de Nina Carducci, photographe passionnée, ainsi que ses différents services">
+	<meta name="twitter:title" content="Nina Carducci - Photographe">
+	<meta name="twitter:description" content="Venez découvrir le portfolio de Nina Carducci, photographe passionnée située à Bordeaux, ainsi que ses différents services">
+	<meta name="twitter:image:src" content="./assets/images/camera.avif">
+	<meta property="og:title" content="Nina Carducci - Photographe" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="nina-carducci.github.io" />
+	<meta property="og:image" content="./assets/images/camera.avif" />
+	<meta property="og:site_name" content="Nina Carducci" />
+	<meta property="og:description" content="Venez découvrir le portfolio de Nina Carducci, photographe passionnée située à Bordeaux, ainsi que ses différents services" />
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "Article",
+			"headline": "Nina Carducci, photographe à Bordeaux",
+			"image": "./assets/images/camera.avif",
+			"name": "Nina Carducci",
+			"Adresse": "68 avenue Alsace-Lorraine, 33200 Bordeaux",
+			"author": {
+				"@type": "Person",
+				"name": "Nina Carducci",
+				"url": "nina-carducci.github.io"
+			},	
+			"Téléphone": "05 56 67 78 89",
+			"Horaires de contact": "Du lundi au vendredi, de 10h à 19h"
+		}
+	</script>
 	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
 	<script src="./assets/maugallery.js" defer></script>
@@ -25,7 +51,7 @@
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="instagram"></a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="instagram" title="logo instagram"></a></li>
 			</ul>
 		</div>
 	</section>
@@ -38,28 +64,13 @@
 			</div>
 			<div class="carousel-inner">
 				<figure class="carousel-item active">
-					<img 
-					src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-s.avif"
-					srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif 651w" 
-					class="d-block" 
-					sizes="1000vw"
-					alt="carousel1">
+					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif" class="d-block w-100" alt="carousel-1" title="Photo carousel 1">
 				</figure>
 				<figure class="carousel-item">
-					<img 
-					src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-s.avif"
-					srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif 651w" 
-					class="d-block" 
-					sizes="1000vw"
-					alt="carousel2">
+					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif" class="d-block w-100" alt="carousel-2" title="Photo carousel 2">
 				</figure>
 				<figure class="carousel-item">
-					<img 
-					src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-s.avif"
-					srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif 651w" 
-					class="d-block" 
-					sizes="1000vw"
-					alt="carousel3">
+					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif" class="d-block w-100" alt="carousel-3" title="Photo carousel 3">
 				</figure>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -76,15 +87,11 @@
 <main>
 	<section id="about">
 		<figure class="picture left">
-			<img 
-			src="./assets/images/nina-s.avif"
-			srcset="./assets/images/nina.avif 651w" 
-			sizes="1000vw"
-			alt="nina">
+			<img src="./assets/images/nina.avif" alt="image-nina" title="Nina Carducci">
 		</figure>
 		<article id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
-			<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+			<span class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</span>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</article>
@@ -93,15 +100,15 @@
 		<h3 class="title">Portfolio</h3>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" alt="gallery1"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" alt="gallery2"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" alt="gallery3"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" alt="gallery4"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" alt="gallery5"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" alt="gallery6"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif" alt="gallery7"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" alt="gallery9"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" alt="gallery10"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" alt="gallery-1" title="Photos gallerie 1"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" alt="gallery-2" title="Photos gallerie 2"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" alt="gallery-3" title="Photos gallerie 3"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" alt="gallery-4" title="Photos gallerie 4"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" alt="gallery-5" title="Photos gallerie 5"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" alt="gallery-6" title="Photos gallerie 6"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif" alt="gallery-7" title="Photos gallerie 7"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" alt="gallery-8" title="Photos gallerie 8"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" alt="gallery-9" title="Photos gallerie 9"/>
 			</div>
 		</div>
 		<aside class="quote">
@@ -174,11 +181,7 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img 
-				src="./assets/images/camera-s.avif"
-				srcset="./assets/images/camera.avif 651w" 
-				sizes="1000vw"
-				alt="camera">
+				<img src="./assets/images/camera.avif" alt="image-camera" title="Camera">
 			</div>
 		</div>
 	</section>
